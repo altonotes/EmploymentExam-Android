@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/contentFrame"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/footerLeftButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <jp.co.altonotes.EmploymentExam.LoginView
+            android:id="@+id/loginView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <jp.co.altonotes.EmploymentExam.DataListView
+            android:id="@+id/dataListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="#CCCCCC"
+        app:layout_constraintBottom_toTopOf="@id/footerLeftButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#EEEEEE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/footerLeftButton" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/footerLeftButton"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:background="@android:color/transparent"
+        android:enabled="false"
+        android:text="@string/login"
+        android:textColor="@drawable/footer_button_text_selector"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/footerRightButton"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/footerRightButton"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:background="@android:color/transparent"
+        android:text="@string/dataList"
+        android:textColor="@drawable/footer_button_text_selector"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/footerLeftButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

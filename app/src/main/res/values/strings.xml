@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">EmploymentExam</string>
+
+    <string name="login">ログイン</string>
+    <string name="dataList">データ表示</string>
+
+    <!-- ログイン画面 -->
+    <string name="userName">ユーザーネーム</string>
+    <string name="password">パスワード</string>
+
+    <!-- 共通 -->
+    <string name="ok">OK</string>
+</resources>
